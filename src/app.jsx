@@ -11,7 +11,8 @@ var App = React.createClass ({
 		return React.createElement(
 			"div",
       		null,
-				"ad"
+				"{ this.state.signedIn ? <WorkoutLog onLogout={this._onLogout} /> :
+				<Authentication onAuthComplete={this._onAuthComplete} />}"
 	    );
 	},
 
